@@ -6,7 +6,7 @@ nav.innerHTML +=
     <span></span>
     <span></span>
 </a>
-<a href="" class="navbar-item">
+<a href="/access/" class="navbar-item">
     <img src="/access/assets/imgs/logo.png" width="112" height="28">
 </a>
 </div>

@@ -123,6 +123,11 @@ hr {
     line-height: 50px;
 }
 
+.button{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 .notipopup .content1 {
     position: fixed;
     transform: translate(-50%, -50%) scale(0);
