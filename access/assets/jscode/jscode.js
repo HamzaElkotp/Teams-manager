@@ -35,31 +35,49 @@ function logout2(){
 }
   
 
-/*`<div class="column is-3" id="Pcard1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+let newMem = document.getElementById("NewMemperForm");
+let NewFormName = newMem.name;
+let NewFormLevel = newMem.level;
+let NewFormEnergy = newMem.energy;
+let NewFormSalary = newMem.salary;
+let NewFormExpert = newMem.expert;
+let NFormB = newMem.querySelector("button");
+let MemebrsBox = document.getElementById("Person_Adder")
+NFormB.onclick = function(event){
+    event.preventDefault()
+    let NVal = NewFormName.value;
+    let LVal = NewFormLevel.value;
+    let EnVal = NewFormEnergy.value;
+    let SVal = NewFormSalary.value;
+    let ExVal = NewFormExpert.value;
+    MemebrsBox.innerHTML += `
+    <div class="column is-3" id="Pcard1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
     <div class="card card-with-bg">
         <div class="card-content has-text-centered">
-            <img src="../imgs/profile.png" alt="" class="img-with-size">
-            <h4 class="title is-5 white card-header1">${name}</h4>
+            <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
+            <h4 class="title is-5 white card-header1">${NVal}</h4>
             <hr class="nav-divider">
             <div class="has-text-left texts">
                 <div class="is-flex is-justify-content-space-between">
                     <p class="white">الرتبه:</p>
-                    <p class="has-text-primary">${atchive}</p>
+                    <p class="has-text-primary">${LVal}</p>
                 </div>
                 <div class="is-flex is-justify-content-space-between">
                     <p class="white">الاداء:</p>
-                    <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>${energy}</p>
+                    <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>${EnVal}</p>
                 </div>
                 <div class="is-flex is-justify-content-space-between">
                     <p class="white">الاجر:</p>
-                    <p class="has-text-success">${salary}</p>
+                    <p class="has-text-success">${SVal}</p>
                 </div>
                 <div class="is-flex is-justify-content-space-between">
                     <p class="white">الخبرة:</p>
-                    <p class="has-text-warning">${expert}</p>
+                    <p class="has-text-warning">${ExVal}</p>
                 </div>
             </div>
             <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard1").style.display="none"'>حذف</button>
         </div>
     </div>
-  </div>`*/
+</div>
+    `
+}
