@@ -43,41 +43,52 @@ let NewFormSalary = newMem.salary;
 let NewFormExpert = newMem.expert;
 let NFormB = newMem.querySelector("button");
 let MemebrsBox = document.getElementById("Person_Adder")
-NFormB.onclick = function(event){
-    event.preventDefault()
+NFormB.onclick = function (event){
+    event.preventDefault();
     let NVal = NewFormName.value;
     let LVal = NewFormLevel.value;
     let EnVal = NewFormEnergy.value;
     let SVal = NewFormSalary.value;
     let ExVal = NewFormExpert.value;
-    MemebrsBox.innerHTML += `
-    <div class="column is-3" id="Pcard1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-    <div class="card card-with-bg">
-        <div class="card-content has-text-centered">
-            <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
-            <h4 class="title is-5 white card-header1">${NVal}</h4>
-            <hr class="nav-divider">
-            <div class="has-text-left texts">
-                <div class="is-flex is-justify-content-space-between">
-                    <p class="white">الرتبه:</p>
-                    <p class="has-text-primary">${LVal}</p>
+
+    if(NVal.length != 0 && LVal.length != 0 && EnVal.length != 0 && SVal.length != 0 && ExVal.length != 0){
+        MemebrsBox.innerHTML += `
+        <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+        <div class="card card-with-bg">
+            <div class="card-content has-text-centered">
+                <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
+                <h4 class="title is-5 white card-header1">${NVal}</h4>
+                <hr class="nav-divider">
+                <div class="has-text-left texts">
+                    <div class="is-flex is-justify-content-space-between">
+                        <p class="white">الرتبه:</p>
+                        <p class="has-text-primary">${LVal}</p>
+                    </div>
+                    <div class="is-flex is-justify-content-space-between">
+                        <p class="white">الاداء:</p>
+                        <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>${EnVal}</p>
+                    </div>
+                    <div class="is-flex is-justify-content-space-between">
+                        <p class="white">الاجر:</p>
+                        <p class="has-text-success">${SVal}</p>
+                    </div>
+                    <div class="is-flex is-justify-content-space-between">
+                        <p class="white">الخبرة:</p>
+                        <p class="has-text-warning">${ExVal}</p>
+                    </div>
                 </div>
-                <div class="is-flex is-justify-content-space-between">
-                    <p class="white">الاداء:</p>
-                    <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>${EnVal}</p>
-                </div>
-                <div class="is-flex is-justify-content-space-between">
-                    <p class="white">الاجر:</p>
-                    <p class="has-text-success">${SVal}</p>
-                </div>
-                <div class="is-flex is-justify-content-space-between">
-                    <p class="white">الخبرة:</p>
-                    <p class="has-text-warning">${ExVal}</p>
-                </div>
+                <button class="button is-primary is-outlined texts-btn" onclick=''>تعديل</button>
+                <button class="button is-danger is-outlined texts-btn" onclick='this.parentNode.parentNode.parentNode.remove()'>حذف</button>
             </div>
-            <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard1").style.display="none"'>حذف</button>
         </div>
     </div>
-</div>
-    `
+        `
+    }
+    else{
+        
+    }
 }
+
+// if (window.location.href.includes("#persons")){
+//     peopleManage()
+// }
