@@ -1,480 +1,379 @@
 <html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحه التحكم - ادارة الفريق</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>لوحه التحكم - ادارة الفريق</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/access/assets/css/bulma.min.css">
+    <link rel="stylesheet" href="/access/assets/css/main-style.css">
 
-        <link rel="stylesheet" href="../assets/css/bulma.min.css">
-        <link rel="stylesheet" href="../assets/css/main-style.css">
+    <link rel="icon" href="/access/assets/imgs/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-        <link rel="icon" href="../assets/imgs/logo.png">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
+<body>
+    <nav class="navbar has-shadow" id="nav"></nav>
 
-    <body>
-        <nav class="navbar has-shadow" role="navigation" aria-label="main
-            navigation">
-            <div class="navbar-brand">
-                <a class="navbar-burger" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <a href="../" class="navbar-item">
-                    <img src="../assets/imgs/logo.png" width="112" height="28">
-                </a>
+    <div class="columns is-variable is-0">
+        <div id="slideBar"></div>
+
+        <div class="container block px-1 dash">
+            <h1 class="title is-4">ادارة الفريق</h1>
+            <h2 class="subtitle is-6">الملخص</h2>
+            <div class="columns has-text-centered">
+                <div class="column is-4" data-aos="zoom-in"
+                    data-aos-duration="800" data-aos-delay="400">
+                    <div class="card has-background-success">
+                        <div class="card-content has-text-right">
+                            <div class="content has-text-white">
+                                <h3 class="title is-4 white"><i class="fas
+                                        fa-theater-masks"></i>اداء الفريق</h3>
+                                <hr class="nav-divider">
+                                <p class="is-size-3"><i class="fas
+                                        fa-long-arrow-alt-up"></i>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4" data-aos="zoom-in"
+                    data-aos-duration="800" data-aos-delay="200">
+                    <div class="card has-background-link">
+                        <div class="card-content has-text-right">
+                            <div class="content has-text-white">
+                                <h3 class="title is-4 white"><i class="fas
+                                        fa-project-diagram"></i>المشاريع</h3>
+                                <hr class="nav-divider">
+                                <p class="is-size-3">5 <span
+                                        class="is-size-4">مشاريع</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4" data-aos="zoom-in"
+                    data-aos-duration="800">
+                    <div class="card has-background-primary">
+                        <div class="card-content has-text-right">
+                            <div class="content has-text-white">
+                                <h3 class="title is-4 white"><i class="fas
+                                        fa-donate"></i>التكاليف</h3>
+                                <hr class="nav-divider">
+                                <p class="is-size-3">2,000$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="navbar-menu" id="navbar-menu">
-                <div class="navbar-end">
-                    <a href="../index.html" class="navbar-item">
-                        <i class="fas fa-home has-text-info"></i>الرئيسيه
-                    </a>
-                    <a href="../features/" class="navbar-item">
-                        <i class="fas fa-bolt has-text-warning"></i>الخصائص
-                    </a>
-                    <a href="../prim/" class="navbar-item">
-                        <i class="fas fa-dollar-sign has-text-success"></i>الاسعار
-                    </a>
-                    <a href="../about/" class="navbar-item">حول</a>
+
+            <h2 class="subtitle is-6">الفرق</h2>
+            <div class="columns has-text-right">
+                <div class="column column is-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card-content cloud-card">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image">
+                                    <i class="fad fa-users-class"></i>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-5">Monester Team</p>
+                                <p class="size-p">الفريق رقم: 1 , عدد الاعضاء: 4</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar-start">
-                    <a onclick="notitogglePopup()" class="navbar-item">
-                        <i class="fas fa-bell has-text-danger"></i>الاشعارات
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <p class="navbar-link">الادارة</p>
-                        <div class="navbar-dropdown">
-                            <a href="../profile/" class="navbar-item hoverd1"><i class="fas
-                                    fa-user"></i>الملف الشخصي</a>
-                            <a href="../team/#persons" class="navbar-item hoverd1"><i class="fas
-                                    fa-users"></i>الاعضاء</a>
-                            <a href="../set/" class="navbar-item hoverd1"><i class="fas
-                                    fa-cogs"></i>الاعدادات</a>
-                            <a href="../prim/" class="navbar-item hoverd1"><i
-                                    class="fas fa-wrench"></i>تطوير الحساب</a>
+                <div class="column column is-6">
+                    <div class="card-content cloud-card">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image">
+                                    <i class="fas fa-chalkboard"></i>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-5">لايمكن اضافه فرق اخرى</p>
+                                <p class="size-p">قم بتطوير حسابك 
+                                    <a href="../prim/">من هنا</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="subtitle is-6" id="persons">الاعضاء</h2>
+            <div class="columns has-text-centered is-flex-wrap-wrap"  id="Person_Adder">
+                <div class="column is-3" id="Pcard1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card card-with-bg">
+                        <div class="card-content has-text-centered">
+                            <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
+                            <h4 class="title is-5 white card-header1">حمزة القطب</h4>
                             <hr class="nav-divider">
-                            <a onclick="logout2()" class="navbar-item hoverd1"><i class="fas
-                                    fa-sign-out-alt"></i>تسجيل خروج</a>
+                            <div class="has-text-left texts">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الرتبه:</p>
+                                    <p class="has-text-primary">CEO</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاداء:</p>
+                                    <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>95%</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاجر:</p>
+                                    <p class="has-text-success">53000$</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الخبرة:</p>
+                                    <p class="has-text-warning">10 سنين</p>
+                                </div>
+                            </div>
+                            <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard1").style.display="none"'>حذف</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-3" id="Pcard2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card card-with-bg">
+                        <div class="card-content has-text-centered">
+                            <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
+                            <h4 class="title is-5 white card-header1">غسان جاها</h4>
+                            <hr class="nav-divider">
+                            <div class="has-text-left texts">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الرتبه:</p>
+                                    <p class="has-text-primary">Programmer</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاداء:</p>
+                                    <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>80%</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاجر:</p>
+                                    <p class="has-text-success">20000$</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الخبرة:</p>
+                                    <p class="has-text-warning">6 سنين</p>
+                                </div>
+                            </div>
+                            <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard2").style.display="none"'>حذف</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3" id="Pcard3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card card-with-bg">
+                        <div class="card-content has-text-centered">
+                            <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
+                            <h4 class="title is-5 white card-header1">اسحاق نيوتن</h4>
+                            <hr class="nav-divider">
+                            <div class="has-text-left texts">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الرتبه:</p>
+                                    <p class="has-text-primary">Gravity Inventor</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاداء:</p>
+                                    <p class="has-text-danger"><i class="fas fa-long-arrow-alt-down"></i>500%-</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاجر:</p>
+                                    <p class="has-text-success">1$</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الخبرة:</p>
+                                    <p class="has-text-warning">يوم واحد</p>
+                                </div>
+                            </div>
+                            <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard3").style.display="none"'>حذف</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3" id="Pcard4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card card-with-bg">
+                        <div class="card-content has-text-centered">
+                            <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
+                            <h4 class="title is-5 white card-header1">فاطمه محمد</h4>
+                            <hr class="nav-divider">
+                            <div class="has-text-left texts">
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الرتبه:</p>
+                                    <p class="has-text-primary">Coder</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاداء:</p>
+                                    <p class="has-text-warning"><i class="fas fa-long-arrow-alt-up"></i>50%</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الاجر:</p>
+                                    <p class="has-text-success">10000$</p>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between">
+                                    <p class="white">الخبرة:</p>
+                                    <p class="has-text-warning">5 سنين</p>
+                                </div>
+                            </div>
+                            <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard4").style.display="none"'>حذف</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
-
-        <div class="columns is-variable is-0">
-            <div>
-                <div class="menu-container px-1">
-                    <div class="menu-wrapper">
-                        <aside class="menu">
-                            <p class="menu-label">عام</p>
-                            <ul class="menu-list">
-                                <li><a href="../"><i class="fas
-                                            fa-tachometer-alt"></i>لوحة التحكم</a></li>
-                                <li><a href="../cusomers/"><i class="fas
-                                            fa-user-friends"></i>العملاء</a></li>
-                            </ul>
-                            <p class="menu-label">الادارة</p>
-                            <ul class="menu-list">
-                                <li><a href="../set/"><i class="fas fa-cogs"></i>الاعدادات</a></li>
-                                <li><a href="../saving/"><i class="fas
-                                            fa-cloud"></i>ادارة
-                                        التخزين السحابي</a></li>
-                                <li>
-                                    <a href="../team/" class="is-active"><i class="fas
-                                            fa-users-crown"></i>ادارة
-                                        الفريق</a>
-                                    <ul>
-                                        <li><a href="../team/#persons"><i class="fas fa-users"></i>الاعضاء</a></li>
-                                        <li><a href="../team/#persons"><i class="fas
-                                                    fa-user-plus"></i>اضافه عضو</a></li>
-                                        <li><a onclick="togglePopup()"><i
-                                                    class="fas fa-sitemap"></i>اضافه
-                                                فريق</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <p class="menu-label">اخرى</p>
-                            <ul class="menu-list">
-                                <li><a onclick="togglePopup()"><i class="fas
-                                            fa-tasks"></i>مهمات</a></li>
-                                <li><a onclick='mstogglePopup()'><i class="fas
-                                            fa-comment"></i>محادثات</a></li>
-                                <li><a href="../adds/"><i class="fas fa-info-circle"></i>اضافات</a></li>
-                                <li><a href="../help/"><i class="fas fa-hands-helping"></i>مساعده</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                </div>
+            <div class="has-text-centered">
+                <button class="button is-primary texts-btn" onclick="peopleManage()">ادارة قسم الاعضاء</button>
             </div>
+        </div>
+    </div>
 
-            <div class="container block px-1 dash">
-                <h1 class="title is-4">ادارة الفريق</h1>
-                <h2 class="subtitle is-6">الملخص</h2>
-                <div class="columns has-text-centered">
-                    <div class="column is-4" data-aos="zoom-in"
-                        data-aos-duration="800" data-aos-delay="400">
-                        <div class="card has-background-success">
-                            <div class="card-content has-text-right">
-                                <div class="content has-text-white">
-                                    <h3 class="title is-4 white"><i class="fas
-                                            fa-theater-masks"></i>اداء الفريق</h3>
-                                    <hr class="nav-divider">
-                                    <p class="is-size-3"><i class="fas
-                                            fa-long-arrow-alt-up"></i>30%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4" data-aos="zoom-in"
-                        data-aos-duration="800" data-aos-delay="200">
-                        <div class="card has-background-link">
-                            <div class="card-content has-text-right">
-                                <div class="content has-text-white">
-                                    <h3 class="title is-4 white"><i class="fas
-                                            fa-project-diagram"></i>المشاريع</h3>
-                                    <hr class="nav-divider">
-                                    <p class="is-size-3">5 <span
-                                            class="is-size-4">مشاريع</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-4" data-aos="zoom-in"
-                        data-aos-duration="800">
-                        <div class="card has-background-primary">
-                            <div class="card-content has-text-right">
-                                <div class="content has-text-white">
-                                    <h3 class="title is-4 white"><i class="fas
-                                            fa-donate"></i>التكاليف</h3>
-                                    <hr class="nav-divider">
-                                    <p class="is-size-3">2,000$</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <h2 class="subtitle is-6">الفرق</h2>
-                <div class="columns has-text-right">
-                    <div class="column column is-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-                        <div class="card-content cloud-card">
+    <div class="notipopup" id="notipopup-1">
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-body">
+                    <div class="card">
+                        <div class="card-content">
                             <div class="media">
                                 <div class="media-left">
-                                    <figure class="image">
-                                        <i class="fad fa-users-class"></i>
+                                    <figure class="image is-48x48">
+                                        <img
+                                            src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-5">Monester Team</p>
-                                    <p class="size-p">الفريق رقم: 1 , عدد الاعضاء: 4</p>
+                                    <p class="is-size-6">تم اضافه
+                                        "عمر محمد"
+                                        الى الفريق بنجاح</p>
+                                    <p class="is-size-7"><i
+                                            class="far
+                                            fa-clock has-text-info"></i>منذ
+                                        دقيقتين</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="column column is-6">
-                        <div class="card-content cloud-card">
+
+                        <div class="card-content">
                             <div class="media">
                                 <div class="media-left">
-                                    <figure class="image">
-                                        <i class="fas fa-chalkboard"></i>
+                                    <figure class="image is-48x48">
+                                        <img
+                                            src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-5">لايمكن اضافه فرق اخرى</p>
-                                    <p class="size-p">قم بتطوير حسابك 
-                                        <a href="../prim/">من هنا</a></p>
+                                    <p class="is-size-6">تم ارسال
+                                        طلب انضمام
+                                        الى "عمر محمد"</p>
+                                    <p class="is-size-7"><i
+                                            class="far
+                                            fa-clock has-text-info"></i>منذ
+                                        5 دقائق</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </article>
+        </div>
+    </div>
 
-
-                <h2 class="subtitle is-6" id="persons">الاعضاء</h2>
-                <div class="columns has-text-centered is-flex-wrap-wrap"  id="Person_Adder">
-                    <div class="column is-3" id="Pcard1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-                        <div class="card card-with-bg">
-                            <div class="card-content has-text-centered">
-                                <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
-                                <h4 class="title is-5 white card-header1">حمزة القطب</h4>
-                                <hr class="nav-divider">
-                                <div class="has-text-left texts">
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الرتبه:</p>
-                                        <p class="has-text-primary">CEO</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاداء:</p>
-                                        <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>95%</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاجر:</p>
-                                        <p class="has-text-success">53000$</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الخبرة:</p>
-                                        <p class="has-text-warning">10 سنين</p>
-                                    </div>
-                                </div>
-                                <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard1").style.display="none"'>حذف</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column is-3" id="Pcard2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-                        <div class="card card-with-bg">
-                            <div class="card-content has-text-centered">
-                                <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
-                                <h4 class="title is-5 white card-header1">غسان جاها</h4>
-                                <hr class="nav-divider">
-                                <div class="has-text-left texts">
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الرتبه:</p>
-                                        <p class="has-text-primary">Programmer</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاداء:</p>
-                                        <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>80%</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاجر:</p>
-                                        <p class="has-text-success">20000$</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الخبرة:</p>
-                                        <p class="has-text-warning">6 سنين</p>
-                                    </div>
-                                </div>
-                                <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard2").style.display="none"'>حذف</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column is-3" id="Pcard3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-                        <div class="card card-with-bg">
-                            <div class="card-content has-text-centered">
-                                <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
-                                <h4 class="title is-5 white card-header1">اسحاق نيوتن</h4>
-                                <hr class="nav-divider">
-                                <div class="has-text-left texts">
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الرتبه:</p>
-                                        <p class="has-text-primary">Gravity Inventor</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاداء:</p>
-                                        <p class="has-text-danger"><i class="fas fa-long-arrow-alt-down"></i>500%-</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاجر:</p>
-                                        <p class="has-text-success">1$</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الخبرة:</p>
-                                        <p class="has-text-warning">يوم واحد</p>
-                                    </div>
-                                </div>
-                                <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard3").style.display="none"'>حذف</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column is-3" id="Pcard4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-                        <div class="card card-with-bg">
-                            <div class="card-content has-text-centered">
-                                <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
-                                <h4 class="title is-5 white card-header1">فاطمه محمد</h4>
-                                <hr class="nav-divider">
-                                <div class="has-text-left texts">
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الرتبه:</p>
-                                        <p class="has-text-primary">Coder</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاداء:</p>
-                                        <p class="has-text-warning"><i class="fas fa-long-arrow-alt-up"></i>50%</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الاجر:</p>
-                                        <p class="has-text-success">10000$</p>
-                                    </div>
-                                    <div class="is-flex is-justify-content-space-between">
-                                        <p class="white">الخبرة:</p>
-                                        <p class="has-text-warning">5 سنين</p>
-                                    </div>
-                                </div>
-                                <button class="button is-danger is-outlined texts-btn" onclick='document.getElementById("Pcard4").style.display="none"'>حذف</button>
-                            </div>
-                        </div>
-                    </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-header">
+                    <p class="white"><i class="fas fa-hand-paper has-text-danger"></i>لا يمكنك استخدام هذه الميزه!</p>
+                    <button class="delete" aria-label="delete" onclick='togglePopup()'></button>
                 </div>
-                <div class="has-text-centered">
-                    <button class="button is-primary texts-btn" onclick="peopleManage()">ادارة قسم الاعضاء</button>
+                <div class="message-body has-text-weight-bold">
+                    لايمكنك استخدام هذه الميزه , قم بتطوير حسابك
+                    للاشتراك
+                    المدفوع للحصول على اخر التحديثات والمميزات
+                    <br><br>
+                    <a href="prim/">الانتقال للاشتراك المدفوع</a>
                 </div>
-            </div>
+            </article>
+
         </div>
+    </div>
 
-        <div class="notipopup" id="notipopup-1">
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-body">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img
-                                                src="https://bulma.io/images/placeholders/96x96.png"
-                                                alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="is-size-6">تم اضافه
-                                            "عمر محمد"
-                                            الى الفريق بنجاح</p>
-                                        <p class="is-size-7"><i
-                                                class="far
-                                                fa-clock has-text-info"></i>منذ
-                                            دقيقتين</p>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="mspopup" id="mspopup-1">
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-header">
+                    <p class="white"><i class="fas fa-comment-alt"></i>الرسائل</p>
+                    <button class="delete" aria-label="delete"
+                        onclick='mstogglePopup()'></button>
+                </div>
+                <div class="message-body">
+                    <p class="content is-6">لاتوجد رسائل حتى الان</p>
+                </div>
+            </article>
+        </div>
+    </div>
 
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img
-                                                src="https://bulma.io/images/placeholders/96x96.png"
-                                                alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="is-size-6">تم ارسال
-                                            طلب انضمام
-                                            الى "عمر محمد"</p>
-                                        <p class="is-size-7"><i
-                                                class="far
-                                                fa-clock has-text-info"></i>منذ
-                                            5 دقائق</p>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="peopopup" id="peopopup-1">
+        <div class="overlay"></div>
+        <div class="content1">
+            <article class="message is-primary" id="message3">
+                <div class="message-header">
+                    <p class="white"><i class="fas fa-calendar-check"></i>ادارة قسم الاعضاء</p>
+                    <button class="delete" aria-label="delete"
+                        onclick='peopleManage()'></button>
+                </div>
+                <div class="message-body message-body12">
+                    <h1 class="title is-5 has-text-primary">اضافة عضو</h1>
+                    <form action="" id="New-Memper-Form">
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الاسم" id="name">
                         </div>
-                    </div>
-                </article>
-            </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الرتبه" id="atchive">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الاداء" id="energy">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الاجر" id="salary">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الخبرة" id="expert">
+                        </div>
+                        <div class="field">
+                            <input type="button" class="button is-primary" value="اضافة العضو" onclick="NewMemper()">
+                        </div>
+                    </form>
+                </div>
+            </article>
         </div>
+    </div>
 
-        <div class="popup" id="popup-1">
-            <div class="overlay"></div>
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-header">
-                        <p class="white"><i class="fas fa-hand-paper has-text-danger"></i>لا يمكنك استخدام هذه الميزه!</p>
-                        <button class="delete" aria-label="delete" onclick='togglePopup()'></button>
-                    </div>
-                    <div class="message-body has-text-weight-bold">
-                        لايمكنك استخدام هذه الميزه , قم بتطوير حسابك
-                        للاشتراك
-                        المدفوع للحصول على اخر التحديثات والمميزات
-                        <br><br>
-                        <a href="prim/">الانتقال للاشتراك المدفوع</a>
-                    </div>
-                </article>
-
-            </div>
+    <div class="logout" id="logout-1">
+        <div class="overlay"></div>
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-body">
+                    <i class="fas fa-sign-out-alt has-text-danger"></i>
+                    <p class="title is-4 has-text-danger">تم تسجيل الخروج بنجاح</p>
+                </div>
+            </article>
         </div>
+    </div>
 
-        <div class="mspopup" id="mspopup-1">
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-header">
-                        <p class="white"><i class="fas fa-comment-alt"></i>الرسائل</p>
-                        <button class="delete" aria-label="delete"
-                            onclick='mstogglePopup()'></button>
-                    </div>
-                    <div class="message-body">
-                        <p class="content is-6">لاتوجد رسائل حتى الان</p>
-                    </div>
-                </article>
-            </div>
-        </div>
+    <button class="circled" onclick='mstogglePopup()'><i class="fas fa-comment-alt circle"></i></button>
 
-        <div class="peopopup" id="peopopup-1">
-            <div class="overlay"></div>
-            <div class="content1">
-                <article class="message is-primary" id="message3">
-                    <div class="message-header">
-                        <p class="white"><i class="fas fa-calendar-check"></i>ادارة قسم الاعضاء</p>
-                        <button class="delete" aria-label="delete"
-                            onclick='peopleManage()'></button>
-                    </div>
-                    <div class="message-body message-body12">
-                        <h1 class="title is-5 has-text-primary">اضافة عضو</h1>
-                        <form action="" id="New-Memper-Form">
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الاسم" id="name">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الرتبه" id="atchive">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الاداء" id="energy">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الاجر" id="salary">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الخبرة" id="expert">
-                            </div>
-                            <div class="field">
-                                <input type="button" class="button is-primary" value="اضافة العضو" onclick="NewMemper()">
-                            </div>
-                        </form>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <div class="logout" id="logout-1">
-            <div class="overlay"></div>
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-body">
-                        <i class="fas fa-sign-out-alt has-text-danger"></i>
-                        <p class="title is-4 has-text-danger">تم تسجيل الخروج بنجاح</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <button class="circled" onclick='mstogglePopup()'><i class="fas fa-comment-alt circle"></i></button>
-
-        <footer class="has-text-weight-semibold">
-            <div class="container is-flex
-                is-justify-content-space-between
-                is-flex-wrap-wrap">
-                <p>all rights reserved. copyright © 2021</p>
-                <p><i class="fas fa-heart has-text-danger"><a
-                            href="https://khamsat.com/user/hamzadev"
-                            class="has-text-info"> HamzaDev</a></i>Designed
-                    by</p>
-            </div>
-        </footer>
-        
-    </body>
+    <footer class="has-text-weight-semibold" id="footer"></footer>
+</body>
 </html>
-<script src="../assets/jscode/jscode.js"></script>
+<script src="/access/assets/jscode/NavBar.js"></script>
+<script src="/access/assets/jscode/Footer.js"></script>
+<script src="/access/assets/jscode/jscode.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();

@@ -5,98 +5,23 @@
     <title>لوحه التحكم</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
-    <link rel="stylesheet" href="assets/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="/access/assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/main-style.css">
     
-    <link rel="icon" href="assets/imgs/logo.png">
+    <link rel="icon" href="/access/assets/imgs/logo.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-burger" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <a href="" class="navbar-item">
-                <img src="assets/imgs/logo.png" width="112" height="28">
-            </a>
-        </div>
-
-        <div class="navbar-menu" id="navbar-menu">
-            <div class="navbar-end">
-                <a href="#" class="navbar-item">
-                    <i class="fas fa-home has-text-info"></i>الرئيسيه
-                </a>
-                <a href="features/" class="navbar-item">
-                    <i class="fas fa-bolt has-text-warning"></i>الخصائص
-                </a>
-                <a href="prim/" class="navbar-item">
-                    <i class="fas fa-dollar-sign has-text-success"></i>الاسعار
-                </a>
-                <a href="about/" class="navbar-item">حول</a>
-            </div>
-            <div class="navbar-start">
-                <a onclick="notitogglePopup()" class="navbar-item">
-                    <i class="fas fa-bell has-text-danger"></i>الاشعارات
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <p class="navbar-link">الادارة</p>
-                    <div class="navbar-dropdown">
-                        <a href="profile/" class="navbar-item hoverd1"><i class="fas fa-user"></i>الملف الشخصي</a>
-                        <a href="team/#persons" class="navbar-item hoverd1"><i class="fas fa-users"></i>الاعضاء</a>
-                        <a href="set/" class="navbar-item hoverd1"><i class="fas fa-cogs"></i>الاعدادات</a>
-                        <a href="prim/" class="navbar-item hoverd1"><i class="fas fa-wrench"></i>تطوير الحساب</a>
-                        <hr class="nav-divider">
-                        <a class="navbar-item hoverd1" onclick="logout()"><i class="fas fa-sign-out-alt"></i>تسجيل خروج</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar has-shadow" id="nav"></nav></nav>
 
     <div class="columns is-variable is-0">
-        <div>
-            <div class="menu-container px-1">
-                <div class="menu-wrapper">
-                    <aside class="menu">
-                        <p class="menu-label">عام</p>
-                        <ul class="menu-list">
-                            <li><a class="is-active" href="#"><i class="fas fa-tachometer-alt"></i>لوحة التحكم</a></li>
-                            <li><a href="cusomers/"><i class="fas fa-user-friends"></i>العملاء</a></li>
-                        </ul>
-                        <p class="menu-label">الادارة</p>
-                        <ul class="menu-list">
-                            <li><a href="set/"><i class="fas fa-cogs"></i>الاعدادات</a></li>
-                            <li><a href="saving/"><i class="fas fa-cloud"></i>ادارة التخزين السحابي</a></li>
-                            <li>
-                                <a href="team/"><i class="fas fa-users-crown"></i>ادارة الفريق</a>
-                                <ul>
-                                    <li><a href="team/#persons"><i class="fas fa-users"></i>الاعضاء</a></li>
-                                    <li><a href="team/#persons"><i class="fas fa-user-plus"></i>اضافه عضو</a></li>
-                                    <li><a onclick="togglePopup()"><i class="fas fa-sitemap"></i>اضافه فريق</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p class="menu-label">اخرى</p>
-                        <ul class="menu-list">
-                            <li><a onclick="togglePopup()"><i class="fas fa-tasks"></i>مهمات</a></li>
-                            <li><a  onclick='mstogglePopup()'><i class="fas fa-comment"></i>محادثات</a></li>
-                            <li><a href="adds/"><i class="fas fa-info-circle"></i>اضافات</a></li>
-                            <li><a href="help/"><i class="fas fa-hands-helping"></i>مساعده</a></li>
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-        </div>
+        <div id="slideBar"></div>
 
         <div class="container block px-1 dash">
             <h1 class="title is-4">لوحة التحكم</h1>
@@ -202,7 +127,7 @@
                 </div>
             </div>
 
-            <h2 class="subtitle is-6">الاشعارات</h2>
+            <h2 class="subtitle is-6">التنبيهات</h2>
             <div class="is-fluid">
                 <article class="message is-success" id="message1" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
                     <div class="message-header">
@@ -321,16 +246,13 @@
 
     <button class="circled" onclick='mstogglePopup()'><i class="fas fa-comment-alt circle"></i></button>
 
-    <footer class="has-text-weight-semibold">
-        <div class="container is-flex is-justify-content-space-between is-flex-wrap-wrap">
-            <p>all rights reserved. copyright © 2021</p>
-            <p><i class="fas fa-heart has-text-danger"><a href="https://khamsat.com/user/hamzadev" class="has-text-info"> HamzaDev</a></i>Designed by</p>
-        </div>
-    </footer>
+    <footer class="has-text-weight-semibold" id="footer"></footer>
 </body>
 
 </html>
-<script src="assets/jscode/jscode.js"></script>
+<script src="/access/assets/jscode/NavBar.js"></script>
+<script src="/access/assets/jscode/Footer.js"></script>
+<script src="/access/assets/jscode/jscode.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();

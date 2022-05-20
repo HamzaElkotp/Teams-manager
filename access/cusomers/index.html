@@ -1,502 +1,403 @@
 <html dir="rtl" lang="ar">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>لوحه التحكم - العملاء</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحه التحكم - العملاء</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bulma.min.css">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-        <link rel="stylesheet" href="../assets/css/bulma.min.css">
-        <link rel="stylesheet" href="../assets/css/main-style.css">
+    <link rel="stylesheet" href="/access/assets/css/bulma.min.css">
+    <link rel="stylesheet" href="/access/assets/css/main-style.css">
 
-        <link rel="icon" href="../assets/imgs/logo.png">
-    </head>
+    <link rel="icon" href="/access/assets/imgs/logo.png">
+</head>
 
-    <body>
-        <nav class="navbar has-shadow" role="navigation" aria-label="main
-            navigation">
-            <div class="navbar-brand">
-                <a class="navbar-burger" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <a href="../" class="navbar-item">
-                    <img src="../assets/imgs/logo.png" width="112" height="28">
-                </a>
+<body>
+    <nav class="navbar has-shadow" id="nav"></nav>
+
+    <div class="columns is-variable is-0">
+        <div id="slideBar"></div>
+
+        <div class="container block px-1 dash">
+            <h1 class="title is-4">العملاء</h1>
+            <h2 class="subtitle is-6">البيانات</h2>
+            <div dir="ltr">
+                <table id="example" class="table is-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Position</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Start date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>My Crash</td>
+                            <td>15</td>
+                            <td>On My head</td>
+                            <td>My.Crash@gmail.com</td>
+                            <td>111 1111 111</td>
+                            <td>2021/05/31</td>
+                        </tr> 
+                        <tr>
+                            <td>Hamza</td>
+                            <td>16</td>
+                            <td>Mekka</td>
+                            <td>hamzadev1business@gmail.com</td>
+                            <td>434 3234 23</td>
+                            <td>2021/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>61</td>
+                            <td>System Architect</td>
+                            <td>tigrt32@gmail.com</td>
+                            <td>845 978 23</td>
+                            <td>2011/04/25</td>
+                        </tr>  
+                        <tr>
+                            <td>Falfol</td>
+                            <td>31</td>
+                            <td>Felfel</td>
+                            <td>Falfol@gmail.com</td>
+                            <td>542 978 23</td>
+                            <td>2011/04/25</td>
+                        </tr> 
+                        <tr>
+                            <td>احمد سيد</td>
+                            <td>0</td>
+                            <td>Mekka</td>
+                            <td>ahmadooooh@gmail.com</td>
+                            <td>434 2333 532</td>
+                            <td>2013/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>كائن فضائي</td>
+                            <td>1</td>
+                            <td>كوكب زحل</td>
+                            <td>zohaloooh@gmail.com</td>
+                            <td>114 2133 532</td>
+                            <td>2015/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>القط مياو</td>
+                            <td>1</td>
+                            <td>مياو</td>
+                            <td>meo@gmail.com</td>
+                            <td>111 2020 000</td>
+                            <td>2018/09/10</td>
+                        </tr>
+                        <tr>
+                            <td>Khadiga</td>
+                            <td>84</td>
+                            <td>Saudi Arabia</td>
+                            <td>Khadiga@gmail.com</td>
+                            <td>589 3558 040</td>
+                            <td>2020/12/12</td>
+                        </tr>
+                        <tr>
+                            <td>Meoooooooo</td>
+                            <td>20</td>
+                            <td>USA</td>
+                            <td>todot@gmail.com</td>
+                            <td>343 3234 24</td>
+                            <td>2016/09/01</td>
+                        </tr> 
+                        <tr>
+                            <td>Osama Elzero</td>
+                            <td>32</td>
+                            <td>Egypt</td>
+                            <td>OsamaElzero@gmail.com</td>
+                            <td>434 3234 23</td>
+                            <td>2019/11/25</td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>61</td>
+                            <td>System Architect</td>
+                            <td>tigrt32@gmail.com</td>
+                            <td>845 978 23</td>
+                            <td>2011/04/25</td>
+                        </tr>  
+                        <tr>
+                            <td>Falfol</td>
+                            <td>31</td>
+                            <td>Felfel</td>
+                            <td>Falfol@gmail.com</td>
+                            <td>542 978 23</td>
+                            <td>2011/04/25</td>
+                        </tr> 
+                        <tr>
+                            <td>احمد سيد</td>
+                            <td>0</td>
+                            <td>Mekka</td>
+                            <td>ahmadooooh@gmail.com</td>
+                            <td>434 2333 532</td>
+                            <td>2013/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>كائن فضائي</td>
+                            <td>1</td>
+                            <td>كوكب زحل</td>
+                            <td>zohaloooh@gmail.com</td>
+                            <td>114 2133 532</td>
+                            <td>2015/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>القط مياو</td>
+                            <td>1</td>
+                            <td>مياو</td>
+                            <td>meo@gmail.com</td>
+                            <td>111 2020 000</td>
+                            <td>2018/09/10</td>
+                        </tr>
+                        <tr>
+                            <td>Fatema</td>
+                            <td>44</td>
+                            <td>uuuu</td>
+                            <td>Fatema@gmail.com</td>
+                            <td>221 2020 000</td>
+                            <td>2001/09/10</td>
+                        </tr>
+                        <tr>
+                            <td>My Crash</td>
+                            <td>15</td>
+                            <td>On My head</td>
+                            <td>My.Crash@gmail.com</td>
+                            <td>111 1111 111</td>
+                            <td>2021/05/31</td>
+                        </tr> 
+                        <tr>
+                            <td>Hamza</td>
+                            <td>16</td>
+                            <td>Mekka</td>
+                            <td>hamzadev1business@gmail.com</td>
+                            <td>434 3234 23</td>
+                            <td>2021/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>61</td>
+                            <td>System Architect</td>
+                            <td>tigrt32@gmail.com</td>
+                            <td>845 978 23</td>
+                            <td>2011/04/25</td>
+                        </tr>  
+                        <tr>
+                            <td>Falfol</td>
+                            <td>31</td>
+                            <td>Felfel</td>
+                            <td>Falfol@gmail.com</td>
+                            <td>542 978 23</td>
+                            <td>2011/04/25</td>
+                        </tr> 
+                        <tr>
+                            <td>احمد سيد</td>
+                            <td>0</td>
+                            <td>Mekka</td>
+                            <td>ahmadooooh@gmail.com</td>
+                            <td>434 2333 532</td>
+                            <td>2013/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>كائن فضائي</td>
+                            <td>1</td>
+                            <td>كوكب زحل</td>
+                            <td>zohaloooh@gmail.com</td>
+                            <td>114 2133 532</td>
+                            <td>2015/04/30</td>
+                        </tr>
+                        <tr>
+                            <td>القط مياو</td>
+                            <td>1</td>
+                            <td>مياو</td>
+                            <td>meo@gmail.com</td>
+                            <td>111 2020 000</td>
+                            <td>2018/09/10</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Position</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Start date</th>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
 
-            <div class="navbar-menu" id="navbar-menu">
-                <div class="navbar-end">
-                    <a href="../index.html" class="navbar-item">
-                        <i class="fas fa-home has-text-info"></i>الرئيسيه
-                    </a>
-                    <a href="../features/" class="navbar-item">
-                        <i class="fas fa-bolt has-text-warning"></i>الخصائص
-                    </a>
-                    <a href="../prim/" class="navbar-item">
-                        <i class="fas fa-dollar-sign has-text-success"></i>الاسعار
-                    </a>
-                    <a href="../about/" class="navbar-item">حول</a>
-                </div>
-                <div class="navbar-start">
-                    <a onclick="notitogglePopup()" class="navbar-item">
-                        <i class="fas fa-bell has-text-danger"></i>الاشعارات
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <p class="navbar-link">الادارة</p>
-                        <div class="navbar-dropdown">
-                            <a href="../profile/" class="navbar-item hoverd1"><i class="fas
-                                    fa-user"></i>الملف الشخصي</a>
-                            <a href="../team/#persons" class="navbar-item hoverd1"><i class="fas
-                                    fa-users"></i>الاعضاء</a>
-                            <a href="../set/" class="navbar-item hoverd1"><i class="fas
-                                    fa-cogs"></i>الاعدادات</a>
-                            <a href="../prim/" class="navbar-item hoverd1"><i
-                                    class="fas fa-wrench"></i>تطوير الحساب</a>
-                            <hr class="nav-divider">
-                            <a onclick="logout2()" class="navbar-item hoverd1"><i class="fas
-                                    fa-sign-out-alt"></i>تسجيل خروج</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.css"/>
 
-        <div class="columns is-variable is-0">
-            <div>
-                <div class="menu-container px-1">
-                    <div class="menu-wrapper">
-                        <aside class="menu">
-                            <p class="menu-label">عام</p>
-                            <ul class="menu-list">
-                                <li><a href="../"><i class="fas
-                                            fa-tachometer-alt"></i>لوحة التحكم</a></li>
-                                <li><a class="is-active"><i class="fas
-                                            fa-user-friends"></i>العملاء</a></li>
-                            </ul>
-                            <p class="menu-label">الادارة</p>
-                            <ul class="menu-list">
-                                <li><a href="../set/"><i class="fas fa-cogs"></i>الاعدادات</a></li>
-                                <li><a href="../saving/"><i class="fas
-                                            fa-cloud"></i>ادارة
-                                        التخزين السحابي</a></li>
-                                <li>
-                                    <a href="../team/"><i class="fas
-                                            fa-users-crown"></i>ادارة
-                                        الفريق</a>
-                                    <ul>
-                                        <li><a href="../team/#persons"><i class="fas fa-users"></i>الاعضاء</a></li>
-                                        <li><a href="../team/#persons"><i class="fas
-                                                    fa-user-plus"></i>اضافه عضو</a></li>
-                                        <li><a onclick="togglePopup()"><i
-                                                    class="fas fa-sitemap"></i>اضافه
-                                                فريق</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <p class="menu-label">اخرى</p>
-                            <ul class="menu-list">
-                                <li><a onclick="togglePopup()"><i class="fas
-                                            fa-tasks"></i>مهمات</a></li>
-                                <li><a onclick='mstogglePopup()'><i class="fas
-                                            fa-comment"></i>محادثات</a></li>
-                                <li><a href="../adds/"><i class="fas fa-info-circle"></i>اضافات</a></li>
-                                <li><a href="../help/"><i class="fas fa-hands-helping"></i>مساعده</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container block px-1 dash">
-                <h1 class="title is-4">العملاء</h1>
-                <h2 class="subtitle is-6">البيانات</h2>
-                <div dir="ltr">
-                    <table id="example" class="table is-striped">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Position</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Start date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>My Crash</td>
-                                <td>15</td>
-                                <td>On My head</td>
-                                <td>My.Crash@gmail.com</td>
-                                <td>111 1111 111</td>
-                                <td>2021/05/31</td>
-                            </tr> 
-                            <tr>
-                                <td>Hamza</td>
-                                <td>16</td>
-                                <td>Mekka</td>
-                                <td>hamzadev1business@gmail.com</td>
-                                <td>434 3234 23</td>
-                                <td>2021/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>61</td>
-                                <td>System Architect</td>
-                                <td>tigrt32@gmail.com</td>
-                                <td>845 978 23</td>
-                                <td>2011/04/25</td>
-                            </tr>  
-                            <tr>
-                                <td>Falfol</td>
-                                <td>31</td>
-                                <td>Felfel</td>
-                                <td>Falfol@gmail.com</td>
-                                <td>542 978 23</td>
-                                <td>2011/04/25</td>
-                            </tr> 
-                            <tr>
-                                <td>احمد سيد</td>
-                                <td>0</td>
-                                <td>Mekka</td>
-                                <td>ahmadooooh@gmail.com</td>
-                                <td>434 2333 532</td>
-                                <td>2013/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>كائن فضائي</td>
-                                <td>1</td>
-                                <td>كوكب زحل</td>
-                                <td>zohaloooh@gmail.com</td>
-                                <td>114 2133 532</td>
-                                <td>2015/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>القط مياو</td>
-                                <td>1</td>
-                                <td>مياو</td>
-                                <td>meo@gmail.com</td>
-                                <td>111 2020 000</td>
-                                <td>2018/09/10</td>
-                            </tr>
-                            <tr>
-                                <td>Khadiga</td>
-                                <td>84</td>
-                                <td>Saudi Arabia</td>
-                                <td>Khadiga@gmail.com</td>
-                                <td>589 3558 040</td>
-                                <td>2020/12/12</td>
-                            </tr>
-                            <tr>
-                                <td>Meoooooooo</td>
-                                <td>20</td>
-                                <td>USA</td>
-                                <td>todot@gmail.com</td>
-                                <td>343 3234 24</td>
-                                <td>2016/09/01</td>
-                            </tr> 
-                            <tr>
-                                <td>Osama Elzero</td>
-                                <td>32</td>
-                                <td>Egypt</td>
-                                <td>OsamaElzero@gmail.com</td>
-                                <td>434 3234 23</td>
-                                <td>2019/11/25</td>
-                            </tr>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>61</td>
-                                <td>System Architect</td>
-                                <td>tigrt32@gmail.com</td>
-                                <td>845 978 23</td>
-                                <td>2011/04/25</td>
-                            </tr>  
-                            <tr>
-                                <td>Falfol</td>
-                                <td>31</td>
-                                <td>Felfel</td>
-                                <td>Falfol@gmail.com</td>
-                                <td>542 978 23</td>
-                                <td>2011/04/25</td>
-                            </tr> 
-                            <tr>
-                                <td>احمد سيد</td>
-                                <td>0</td>
-                                <td>Mekka</td>
-                                <td>ahmadooooh@gmail.com</td>
-                                <td>434 2333 532</td>
-                                <td>2013/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>كائن فضائي</td>
-                                <td>1</td>
-                                <td>كوكب زحل</td>
-                                <td>zohaloooh@gmail.com</td>
-                                <td>114 2133 532</td>
-                                <td>2015/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>القط مياو</td>
-                                <td>1</td>
-                                <td>مياو</td>
-                                <td>meo@gmail.com</td>
-                                <td>111 2020 000</td>
-                                <td>2018/09/10</td>
-                            </tr>
-                            <tr>
-                                <td>Fatema</td>
-                                <td>44</td>
-                                <td>uuuu</td>
-                                <td>Fatema@gmail.com</td>
-                                <td>221 2020 000</td>
-                                <td>2001/09/10</td>
-                            </tr>
-                            <tr>
-                                <td>My Crash</td>
-                                <td>15</td>
-                                <td>On My head</td>
-                                <td>My.Crash@gmail.com</td>
-                                <td>111 1111 111</td>
-                                <td>2021/05/31</td>
-                            </tr> 
-                            <tr>
-                                <td>Hamza</td>
-                                <td>16</td>
-                                <td>Mekka</td>
-                                <td>hamzadev1business@gmail.com</td>
-                                <td>434 3234 23</td>
-                                <td>2021/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>61</td>
-                                <td>System Architect</td>
-                                <td>tigrt32@gmail.com</td>
-                                <td>845 978 23</td>
-                                <td>2011/04/25</td>
-                            </tr>  
-                            <tr>
-                                <td>Falfol</td>
-                                <td>31</td>
-                                <td>Felfel</td>
-                                <td>Falfol@gmail.com</td>
-                                <td>542 978 23</td>
-                                <td>2011/04/25</td>
-                            </tr> 
-                            <tr>
-                                <td>احمد سيد</td>
-                                <td>0</td>
-                                <td>Mekka</td>
-                                <td>ahmadooooh@gmail.com</td>
-                                <td>434 2333 532</td>
-                                <td>2013/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>كائن فضائي</td>
-                                <td>1</td>
-                                <td>كوكب زحل</td>
-                                <td>zohaloooh@gmail.com</td>
-                                <td>114 2133 532</td>
-                                <td>2015/04/30</td>
-                            </tr>
-                            <tr>
-                                <td>القط مياو</td>
-                                <td>1</td>
-                                <td>مياو</td>
-                                <td>meo@gmail.com</td>
-                                <td>111 2020 000</td>
-                                <td>2018/09/10</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Position</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Start date</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-
-                <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.css"/>
- 
-                <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
-            </div>
+            <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
         </div>
+    </div>
 
-        <div class="notipopup" id="notipopup-1">
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-body">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img
-                                                src="https://bulma.io/images/placeholders/96x96.png"
-                                                alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="is-size-6">تم اضافه
-                                            "عمر محمد"
-                                            الى الفريق بنجاح</p>
-                                        <p class="is-size-7"><i
-                                                class="far
-                                                fa-clock has-text-info"></i>منذ
-                                            دقيقتين</p>
-                                    </div>
+    <div class="notipopup" id="notipopup-1">
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-body">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img
+                                            src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="is-size-6">تم اضافه
+                                        "عمر محمد"
+                                        الى الفريق بنجاح</p>
+                                    <p class="is-size-7"><i
+                                            class="far
+                                            fa-clock has-text-info"></i>منذ
+                                        دقيقتين</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img
-                                                src="https://bulma.io/images/placeholders/96x96.png"
-                                                alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="is-size-6">تم ارسال
-                                            طلب انضمام
-                                            الى "عمر محمد"</p>
-                                        <p class="is-size-7"><i
-                                                class="far
-                                                fa-clock has-text-info"></i>منذ
-                                            5 دقائق</p>
-                                    </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img
+                                            src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="is-size-6">تم ارسال
+                                        طلب انضمام
+                                        الى "عمر محمد"</p>
+                                    <p class="is-size-7"><i
+                                            class="far
+                                            fa-clock has-text-info"></i>منذ
+                                        5 دقائق</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </article>
-            </div>
+                </div>
+            </article>
         </div>
+    </div>
 
-        <div class="popup" id="popup-1">
-            <div class="overlay"></div>
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-header">
-                        <p class="white"><i class="fas fa-hand-paper has-text-danger"></i>لا يمكنك استخدام هذه الميزه!</p>
-                        <button class="delete" aria-label="delete" onclick='togglePopup()'></button>
-                    </div>
-                    <div class="message-body has-text-weight-bold">
-                        لايمكنك استخدام هذه الميزه , قم بتطوير حسابك
-                        للاشتراك
-                        المدفوع للحصول على اخر التحديثات والمميزات
-                        <br><br>
-                        <a href="prim/">الانتقال للاشتراك المدفوع</a>
-                    </div>
-                </article>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-header">
+                    <p class="white"><i class="fas fa-hand-paper has-text-danger"></i>لا يمكنك استخدام هذه الميزه!</p>
+                    <button class="delete" aria-label="delete" onclick='togglePopup()'></button>
+                </div>
+                <div class="message-body has-text-weight-bold">
+                    لايمكنك استخدام هذه الميزه , قم بتطوير حسابك
+                    للاشتراك
+                    المدفوع للحصول على اخر التحديثات والمميزات
+                    <br><br>
+                    <a href="prim/">الانتقال للاشتراك المدفوع</a>
+                </div>
+            </article>
 
-            </div>
         </div>
+    </div>
 
-        <div class="mspopup" id="mspopup-1">
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-header">
-                        <p class="white"><i class="fas fa-comment-alt"></i>الرسائل</p>
-                        <button class="delete" aria-label="delete"
-                            onclick='mstogglePopup()'></button>
-                    </div>
-                    <div class="message-body">
-                        <p class="content is-6">لاتوجد رسائل حتى الان</p>
-                    </div>
-                </article>
-            </div>
+    <div class="mspopup" id="mspopup-1">
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-header">
+                    <p class="white"><i class="fas fa-comment-alt"></i>الرسائل</p>
+                    <button class="delete" aria-label="delete"
+                        onclick='mstogglePopup()'></button>
+                </div>
+                <div class="message-body">
+                    <p class="content is-6">لاتوجد رسائل حتى الان</p>
+                </div>
+            </article>
         </div>
+    </div>
 
-        <div class="peopopup" id="peopopup-1">
-            <div class="overlay"></div>
-            <div class="content1">
-                <article class="message is-primary" id="message3">
-                    <div class="message-header">
-                        <p class="white"><i class="fas fa-calendar-check"></i>ادارة قسم الاعضاء</p>
-                        <button class="delete" aria-label="delete"
-                            onclick='peopleManage()'></button>
-                    </div>
-                    <div class="message-body message-body12">
-                        <h1 class="title is-5 has-text-primary">اضافة عضو</h1>
-                        <form action="" id="New-Memper-Form">
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الاسم" id="name">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الرتبه" id="atchive">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الاداء" id="energy">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الاجر" id="salary">
-                            </div>
-                            <div class="field">
-                                <input type="text" class="input is-primary" placeholder="الخبرة" id="expert">
-                            </div>
-                            <div class="field">
-                                <input type="button" class="button is-primary" value="اضافة العضو" onclick="NewMemper()">
-                            </div>
-                        </form>
-                    </div>
-                </article>
-            </div>
+    <div class="peopopup" id="peopopup-1">
+        <div class="overlay"></div>
+        <div class="content1">
+            <article class="message is-primary" id="message3">
+                <div class="message-header">
+                    <p class="white"><i class="fas fa-calendar-check"></i>ادارة قسم الاعضاء</p>
+                    <button class="delete" aria-label="delete"
+                        onclick='peopleManage()'></button>
+                </div>
+                <div class="message-body message-body12">
+                    <h1 class="title is-5 has-text-primary">اضافة عضو</h1>
+                    <form action="" id="New-Memper-Form">
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الاسم" id="name">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الرتبه" id="atchive">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الاداء" id="energy">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الاجر" id="salary">
+                        </div>
+                        <div class="field">
+                            <input type="text" class="input is-primary" placeholder="الخبرة" id="expert">
+                        </div>
+                        <div class="field">
+                            <input type="button" class="button is-primary" value="اضافة العضو" onclick="NewMemper()">
+                        </div>
+                    </form>
+                </div>
+            </article>
         </div>
+    </div>
 
-        <div class="logout" id="logout-1">
-            <div class="overlay"></div>
-            <div class="content1">
-                <article class="message" id="message3">
-                    <div class="message-body">
-                        <i class="fas fa-sign-out-alt has-text-danger"></i>
-                        <p class="title is-4 has-text-danger">تم تسجيل الخروج بنجاح</p>
-                    </div>
-                </article>
-            </div>
+    <div class="logout" id="logout-1">
+        <div class="overlay"></div>
+        <div class="content1">
+            <article class="message" id="message3">
+                <div class="message-body">
+                    <i class="fas fa-sign-out-alt has-text-danger"></i>
+                    <p class="title is-4 has-text-danger">تم تسجيل الخروج بنجاح</p>
+                </div>
+            </article>
         </div>
+    </div>
 
-        <button class="circled" onclick='mstogglePopup()'><i class="fas fa-comment-alt circle"></i></button>
+    <button class="circled" onclick='mstogglePopup()'><i class="fas fa-comment-alt circle"></i></button>
 
-        <footer class="has-text-weight-semibold">
-            <div class="container is-flex
-                is-justify-content-space-between
-                is-flex-wrap-wrap">
-                <p>all rights reserved. copyright © 2021</p>
-                <p><i class="fas fa-heart has-text-danger"><a
-                            href="https://khamsat.com/user/hamzadev"
-                            class="has-text-info"> HamzaDev</a></i>Designed
-                    by</p>
-            </div>
-        </footer>
-        
-    </body>
+    <footer class="has-text-weight-semibold" id="footer"></footer>
+    
+</body>
 </html>
-<script src="../assets/jscode/jscode.js"></script>
+<script src="/access/assets/jscode/NavBar.js"></script>
+<script src="/access/assets/jscode/Footer.js"></script>
+<script src="/access/assets/jscode/jscode.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bulma.min.js"></script>
 
 <script>
 $(document).ready(function() {
-    $('#example').DataTable();
+$('#example').DataTable();
 } );
 
 </script>
