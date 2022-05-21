@@ -108,7 +108,7 @@
 
             <h2 class="subtitle is-6" id="persons">الاعضاء</h2>
             <div class="columns has-text-centered is-flex-wrap-wrap"  id="Person_Adder">
-                <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" mem-num="1">
                     <div class="card card-with-bg">
                         <div class="card-content has-text-centered">
                             <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
@@ -132,13 +132,13 @@
                                     <p class="has-text-warning">10 سنين</p>
                                 </div>
                             </div>
-                            <button class="button is-primary is-outlined texts-btn" onclick=''><i class="fas fa-pen"></i>تعديل</button>
+                            <button class="button is-primary is-outlined texts-btn" onclick='Meditor(this.parentNode.parentNode.parentNode.getAttribute("mem-num"))'><i class="fas fa-pen"></i>تعديل</button>
                             <button class="button is-danger is-outlined texts-btn" onclick='this.parentNode.parentNode.parentNode.remove()'><i class="fas fa-times"></i>حذف</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" mem-num="2">
                     <div class="card card-with-bg">
                         <div class="card-content has-text-centered">
                             <img src="../assets/imgs/profile.png" alt="" class="img-with-size">
@@ -162,7 +162,7 @@
                                     <p class="has-text-warning">يوم واحد</p>
                                 </div>
                             </div>
-                            <button class="button is-primary is-outlined texts-btn" onclick=''><i class="fas fa-pen"></i>تعديل</button>
+                            <button class="button is-primary is-outlined texts-btn" onclick='Meditor(this.parentNode.parentNode.parentNode.getAttribute("mem-num"))'><i class="fas fa-pen"></i>تعديل</button>
                             <button class="button is-danger is-outlined texts-btn" onclick='this.parentNode.parentNode.parentNode.remove()'><i class="fas fa-times"></i>حذف</button>
                         </div>
                     </div>

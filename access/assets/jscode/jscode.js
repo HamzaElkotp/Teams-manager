@@ -140,6 +140,9 @@ let NFormB = newMem.querySelector("button");
 let MemebrsBox = document.getElementById("Person_Adder")
 NFormB.onclick = function (event){
     event.preventDefault();
+
+    let num_memNums = MemebrsBox.querySelectorAll("[mem-num]");
+
     let NVal = NewFormName.value;
     let LVal = NewFormLevel.value;
     let EnVal = NewFormEnergy.value;
@@ -148,35 +151,35 @@ NFormB.onclick = function (event){
 
     if(NVal.length != 0 && LVal.length != 0 && EnVal.length != 0 && SVal.length != 0 && ExVal.length != 0){
         MemebrsBox.innerHTML += `
-        <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-        <div class="card card-with-bg">
-            <div class="card-content has-text-centered">
-                <img src="/access/assets/imgs/profile.png" alt="" class="img-with-size">
-                <h4 class="title is-5 white card-header1">${NVal}</h4>
-                <hr class="nav-divider">
-                <div class="has-text-left texts">
-                    <div class="is-flex is-justify-content-space-between">
-                        <p class="white">الرتبه:</p>
-                        <p class="has-text-primary">${LVal}</p>
+        <div class="column is-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" mem-num="${num_memNums.length + 1}">
+            <div class="card card-with-bg">
+                <div class="card-content has-text-centered">
+                    <img src="/access/assets/imgs/profile.png" alt="" class="img-with-size">
+                    <h4 class="title is-5 white card-header1">${NVal}</h4>
+                    <hr class="nav-divider">
+                    <div class="has-text-left texts">
+                        <div class="is-flex is-justify-content-space-between">
+                            <p class="white">الرتبه:</p>
+                            <p class="has-text-primary">${LVal}</p>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between">
+                            <p class="white">الاداء:</p>
+                            <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>${EnVal}</p>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between">
+                            <p class="white">الاجر:</p>
+                            <p class="has-text-success">${SVal}</p>
+                        </div>
+                        <div class="is-flex is-justify-content-space-between">
+                            <p class="white">الخبرة:</p>
+                            <p class="has-text-warning">${ExVal}</p>
+                        </div>
                     </div>
-                    <div class="is-flex is-justify-content-space-between">
-                        <p class="white">الاداء:</p>
-                        <p class="has-text-primary"><i class="fas fa-long-arrow-alt-up"></i>${EnVal}</p>
-                    </div>
-                    <div class="is-flex is-justify-content-space-between">
-                        <p class="white">الاجر:</p>
-                        <p class="has-text-success">${SVal}</p>
-                    </div>
-                    <div class="is-flex is-justify-content-space-between">
-                        <p class="white">الخبرة:</p>
-                        <p class="has-text-warning">${ExVal}</p>
-                    </div>
+                    <button class="button is-primary is-outlined texts-btn" onclick='Meditor(this.parentNode.parentNode.parentNode.getAttribute("mem-num"))'><i class="fas fa-pen"></i>تعديل</button>
+                    <button class="button is-danger is-outlined texts-btn" onclick='this.parentNode.parentNode.parentNode.remove()'><i class="fas fa-times"></i>حذف</button>
                 </div>
-                <button class="button is-primary is-outlined texts-btn" onclick=''><i class="fas fa-pen"></i>تعديل</button>
-                <button class="button is-danger is-outlined texts-btn" onclick='this.parentNode.parentNode.parentNode.remove()'><i class="fas fa-times"></i>حذف</button>
             </div>
         </div>
-    </div>
         `
     }
     else{
@@ -184,9 +187,12 @@ NFormB.onclick = function (event){
     }
 }
 
-
-
 // make memeber add pop up show directly when enter page
 /* if (window.location.href.includes("#persons")){
        peopleManage()
 }*/
+
+
+function Meditor(selected){
+    console.log(selected)
+}
